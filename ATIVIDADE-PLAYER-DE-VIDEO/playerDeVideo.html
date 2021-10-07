@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>VÍDEO COM HTML5 e JS</title>
+</head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<body>
+    <br>
+    <video id="playerCustomizado" width="410" controls="controls" poster="_imagens/poster.png">
+        <source src="_media/Surf.mp4" type="video/mp4">
+        O navegador não suporta essa tecnologia.
+    </video>
+
+
+    <div id="custom_video_play">
+        <div class="btn-group btn-group-sm" role="group" aria-label="Exemplo básico">
+            <button type="button" class="btn btn-primary" onclick="playPause()">Play/Pause</button>
+            <button type="button" class="btn btn-primary" onclick="ampliar()">Ampliar</button>
+            <button type="button" class="btn btn-primary" onclick="reduzir()">Reduzir</button>
+            <button type="button" class="btn btn-primary" onclick="tamanhoNormal()">Tamanho normal</button>
+            <button type="button" class="btn btn-primary" onclick="telaCheia()">Tela cheia</button>
+        </div>
+        <div class="btn-group btn-group-sm" role="group" aria-label="Exemplo básico">
+            <button type="button" class="btn btn-primary" onclick="aumentarVolume()">Volume +</button>
+            <button type="button" class="btn btn-primary" onclick="diminuirVolume()">Volume -</button>
+            <button type="button" class="btn btn-primary" onclick="mute()">Mute</button>
+        </div>
+    </div>
+
+    <script src="_javascript/player.js"></script>
+</body>
+
+</html>
