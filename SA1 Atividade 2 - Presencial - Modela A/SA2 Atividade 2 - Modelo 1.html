@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    		<meta charset="UTF-8">
+  		<meta charset="ISO-8859-1"/>
+		
+                        <title>Primeiro exemplo</title>                   
+                        <script charset="ISO-8859-1" src="form1.js"></script>
+  </head>
+  <body>
+
+
+
+<form name="frm" action="#" method="get" onsubmit="verify_form()">
+<fieldset>
+  <legend>Cadastro:</legend>
+
+    Nome:
+      <input id="name" type="text" maxlength="80" size="50">
+      <br><br>
+    Apelido:
+      <input id="nickname" type="text" maxlength="20" size="20">
+      <br><br>
+    Data de nascimento:
+      <input id="day" type="text" maxlength="2" size="2">/
+      <input id="month" type="text" maxlength="2" size="2">/
+      <input id="year" type="text" maxlength="4" size="4">
+      <br><br>
+    CPF:
+      <input id="cpf" type="text" maxlength="14">
+      <br><br>
+    Time do coração:
+      <select id="team_id" maxlength="20">
+        <option id="1">Time 1</option>
+        <option id="2">Time 2</option>
+        <option id="100">Time N</option>
+      </select>
+      <br><br>
+    Esportes de interesse:<br><br>
+     <input type="checkbox" name="sport" id="sport_1">Futebol<br>
+     <input type="checkbox" name="sport" id="sport_2">Vôlei<br>
+     <input type="checkbox" name="sport" id="sport_3">Basquete<br>
+     <input type="checkbox" name="sport" id="sport_4">Futsal<br>
+     <input type="checkbox" name="sport" id="sport_5">Automobilismo<br>
+     <input type="checkbox" name="sport" id="sport_6">Artes Marciais<br>
+     <input type="checkbox" name="sport" id="sport_7">Natação<br>
+	<br><br>
+
+	<input type="submit" value="Submit">
+	<input type="reset" value="Limpar">
+ </fieldset>
+</form>
+
+  </body>
+</html>
+
